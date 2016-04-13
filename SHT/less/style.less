@@ -1,0 +1,49 @@
+
+@bgColor: #FAFAFA;
+@yColor:#CC9900;
+@border: 2px solid red;
+@width-fluid:100%;
+
+body{
+    width: @width-fluid;
+    height: @width-fluid;
+}
+
+html{
+    width: @width-fluid;
+    height: @width-fluid;
+}
+
+
+.container-fluid{
+    background-color: @bgColor;
+    height: 92%;
+    border-top: 1px solid #e5e5e5;
+    
+    .container-body{
+        margin-top:50px ;
+    }
+}
+
+.space{
+    height: 80px;
+    padding: 10px 15px;
+    .title-brand{
+        font-weight:700 ;
+        font-size: 24px;
+        display: inline;
+        padding: 1%;
+        a{
+            color: #080808; 
+            text-decoration:none;
+        }
+         
+    }
+    
+    div:nth-child(2){
+        padding:1%;
+        a:nth-child(1){
+            
+        } 
+    }
+}
