@@ -17,8 +17,8 @@
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">登录</a></li>
-						<li><a href="#">注册</a></li>
+						<li><button type="button" class="btn btn-default" data-toggle="modal" data-target="#login">登录</button></li>
+						<li><button type="button" class="btn btn-info" data-toggle="modal" data-target="#register">注册</button></li>
 					</ul>
 				</div>
 			</div>
@@ -83,7 +83,85 @@
 			</ul>
 		</div>
 		
+		<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h3 class="modal-title text-center" id="gridSystemModalLabel">电商平台</h3>
+		      </div>
+		      <div class="modal-body div-padding">
+		        <div class="container-fluid div-padding">
+		          <div class="row div-padding">
+		          	<div class="col-lg-8 col-lg-offset-2">
+		           		<input type="text" class="form-control input-group-lg" id="search" placeholder="请输入邮箱地址">
+		           	</div>
+		          </div>
+		          <div class="row div-padding">
+		          	<div class="col-lg-8 col-lg-offset-2">
+		           		<input type="password" class="form-control input-group-lg" id="search" placeholder="请输入密码">
+		            </div>
+		          </div>
+		          <div class="row div-padding">
+		          	<div class="col-lg-8 col-lg-offset-2">
+		           		<input type="password" class="form-control input-group-lg" id="search" placeholder="确认密码">
+		            </div>
+		          </div>
+		          <div class="row div-padding">
+		            <div class="col-lg-8 col-lg-offset-2">
+		            	<button type="button" class="btn btn-danger btn-block">注册</button>
+		            </div>
+		          </div>
+		          <div class="row div-padding">
+		            <div class="col-lg-4 col-lg-offset-6">
+		            	<span>已有账号？</span>
+		            	<a href="#" data-toggle="modal" data-target="#login" data-dismiss="modal">点击登录</a>		            
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
 		
+		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h3 class="modal-title text-center" id="gridSystemModalLabel">电商平台</h3>
+		      </div>
+		      <div class="modal-body div-padding">
+		        <div class="container-fluid div-padding">
+		          <div class="row div-padding">
+		          	<div class="col-lg-8 col-lg-offset-2">
+		           		<input type="text" class="form-control input-group-lg" id="search" placeholder="请输入邮箱地址">
+		           	</div>
+		          </div>
+		          <div class="row div-padding">
+		          	<div class="col-lg-8 col-lg-offset-2">
+		           		<input type="password" class="form-control input-group-lg" id="search" placeholder="请输入密码">
+		            </div>
+		          </div>
+		          <div class="row div-padding">
+		            <div class="col-lg-8 col-lg-offset-2">
+		            	<button type="button" class="btn btn-warning btn-block">登录</button>
+		            </div>
+		          </div>
+		          <div class="row div-padding">
+		            <div class="col-lg-4 col-lg-offset-2">
+		            	<a href="#">忘记密码</a>		            
+		            </div>
+		            <div class="col-lg-5">
+		            	<span>还没有账号？</span>
+		            	<a href="#" data-toggle="modal" data-target="#register" data-dismiss="modal">点击注册>></a>		            
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
 		
 
 	</body>
