@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="//cdn.bootcss.com/require.js/2.1.22/require.js" data-main="js/main"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet/less" type="text/css" href="less/orderForm.less" />
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Brand</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#login">登录</button>
+						</li>
+						<li>
+							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#register">注册</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="jumbotron">
+			<div class="panel panel-width">
+				<div class="container div-margin">
+					<ul class="nav nav-tabs" role="tablist">
+					    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">订单详情</a></li>
+					</ul>
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane fade in active" id="home">
+							<div class="row">
+								<div class="col-lg-2"><h3>商品名称：</h3></div>
+								<div class="col-lg-8"><h3>夏季透气网鞋男鞋春运动鞋休闲鞋</h3></div>
+							</div>
+							<div class="row">
+								<div class="col-lg-2"><h3>商品价格：</h3></div>
+								<div class="col-lg-8 big-font"><span>¥119</span></div>
+							</div>
+							<div class="row">
+								<div class="col-lg-2"><h3>尺寸：</h3></div>
+								<div class="col-lg-8"><div class="div-shape">3</div></div>
+							</div>
+							<div class="row">
+								<div class="col-lg-2"><h3>颜色：</h3></div>
+								<div class="col-lg-8"><div class="div-shape" style="background-color: red;height: 22px;"></div></div>
+							</div>
+							<div class="row">
+								<div class="col-lg-2"><h3>姓名：</h3></div>
+								<div class="col-lg-8"><input type="text" class="form-control" id="" placeholder="姓名"></div>
+								<div class="col-lg-1 middle-font"><span>*</span></div>
+							</div>
+							<div class="row">
+								<div class="col-lg-2"><h3>联系电话：</h3></div>
+								<div class="col-lg-8"><input type="text" class="form-control" id="" placeholder="联系电话"></div>
+								<div class="col-lg-1 middle-font"><span>*</span></div>
+							</div>
+							<div class="row">
+								<div class="col-lg-2"><h3>收货地址：</h3></div>
+								<div class="col-lg-8"><input type="text" class="form-control" id="" placeholder="收货地址"></div>
+								<div class="col-lg-1 middle-font"><span>*</span></div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4 col-lg-offset-8 button-position">
+									<button type="button" class="btn btn-danger btn-lg ">确认订单</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
