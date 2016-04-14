@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="//cdn.bootcss.com/require.js/2.1.22/require.js" data-main="js/main"></script>
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-spinner.css" />
+		<link rel="stylesheet/less" type="text/css" href="less/goodsShow.less" />
+		<script>
+			require(['../module/city']);
+		</script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Brand</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#login">登录</button>
+						</li>
+						<li>
+							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#register">注册</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="jumbotron">
+			<div class="panel panel-width">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5">
+							<div class="row">
+								<div class="col-lg-4 big-img">
+									<img src="img/201507171508446984.png" alt="">
+								</div>
+							</div>
+							<div class="row" ng-controller="showController">
+								<div class="col-lg-3" ng-repeat="x in name">
+									<a href="#" class="thumbnail">
+										<img src="img/201507171508446984.png" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-5 col-lg-offset-1 ">
+							<div class="row">
+								<div class="col-lg-12">
+									<h2>夏季透气网鞋男鞋春运动鞋休闲鞋</h2>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12">
+									<h4>品锐型格 实力铸造 是现代男士 工作装的 好选择</h4>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12">
+									<h4>运费:  &nbsp;&nbsp;&nbsp;&nbsp;长沙 至 <a href="#" id="city" data-container="body" data-toggle="popover" data-trigger="focus" data-placement="bottom">长沙▼</a> 快递: 0.00</h4>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="row" id="size">
+										<div class="col-lg-2">
+											<h4>尺寸:</h4>
+										</div>
+										<div class="col-lg-1">
+											<div class="div-shape" onclick="chooseSize(this)">1</div>
+										</div>
+										<div class="col-lg-1">
+											<div class="div-shape" onclick="chooseSize(this)">2</div>
+										</div>
+										<div class="col-lg-1">
+											<div class="div-shape" onclick="chooseSize(this)">3</div>
+										</div>
+										<div class="col-lg-1">
+											<div class="div-shape" onclick="chooseSize(this)">4</div>
+										</div>
+										<div class="col-lg-1">
+											<div class="div-shape" onclick="chooseSize(this)">5</div>
+										</div>
+										<div class="col-lg-1">
+											<div class="div-shape" onclick="chooseSize(this)">6</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="row" id="color">
+										<div class="col-lg-3">
+											<h4>颜色分类:</h4>
+										</div>
+										<div class="col-lg-1">
+											<div class="div-shape" style="background-color: #000000;height: 22px;" onclick="chooseColor(this)"></div>
+										</div>
+										<div class="col-lg-1">
+											<div class="div-shape" style="background-color: #FFFF00;height: 22px;" onclick="chooseColor(this)"></div>
+										</div>
+										<div class="col-lg-1">
+											<div class="div-shape" style="background-color: #FFFFFF;height: 22px;" onclick="chooseColor(this)"></div>
+										</div>
+										<div class="col-lg-1">
+											<div class="div-shape" style="background-color: red;height: 22px;" onclick="chooseColor(this)"></div>
+										</div>
+										<div class="col-lg-1">
+											<div class="div-shape" style="background-color: blue;height: 22px;" onclick="chooseColor(this)"></div>
+										</div>
+										<div class="col-lg-1">
+											<div class="div-shape" style="background-color: green;height: 22px;" onclick="chooseColor(this)"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12 big-font">
+									<div class="row" id="color">
+										<div class="col-lg-2">
+											<h4>价格:</h4>
+										</div>
+										<div class="col-lg-2">
+											<span>¥119</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="row" id="color">
+										<div class="col-lg-2">
+											<h4>数量:</h4>
+										</div>
+										<div class="col-lg-3 col-lg-offset-0">
+			                               	<div class="demo">
+												<div class="input-group spinner" data-trigger="spinner" id="spinner">
+													<input type="text" class="form-control" value="1" data-max="1000" data-min="1" data-step="1">
+													<span class="input-group-addon">
+														<a href="javascript:;" class="spin-up" data-spin="up"><i class="icon-sort-up"></i></a>
+														<a href="javascript:;" class="spin-down" data-spin="down"><i class="icon-sort-down"></i></a>
+													</span>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4" style="margin-top: 10px;">
+											(库存137674件)
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row" ng-controller="DemoController">
+								<div class="col-lg-7 text-center button-position">
+									<button type="button" class="btn btn-info btn-lg">立即购买</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">商品详情</div>
+			<div class="panel-body">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h3>产品参数：</h3>
+							<table class="table">
+								<tr>
+									<td>
+										品牌名称： sanbuqi/尚步奇
+									</td>
+									<td>
+										销售渠道类型：纯电商(只在线上销售)
+									</td>
+									<td>
+										风格：休闲
+									</td>
+								</tr>
+								<tr>
+									<td>
+										尺码：38 39 40 41 42 43 44 45 46
+									</td>
+									<td>
+										颜色分类：深蓝色 灰色 浅棕色 酒红色
+									</td>
+									<td>
+										功能：耐磨
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12 big-img">
+							<h3>产品图片：</h3>
+							<img src="img/201507171508446984.png" alt="">
+							<img src="img/201507171508446984.png" alt="">
+							<img src="img/201507171508446984.png" alt="">
+							<img src="img/201507171508446984.png" alt="">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12">
+							<h3>产品简介：</h3>
+							<span>
+		    					XXXXXX
+		    				</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
