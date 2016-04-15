@@ -1,4 +1,4 @@
-define(['jquery','bootstrap','angular','spinner'],function () {
+define(['jquery','bootstrap','angular','spinner','etalage'],function () {
 	var content = '<div class="row">'+
 			'<div class="col-lg-4">'+
 				'<a href="#">株洲</a>'+
@@ -33,14 +33,17 @@ define(['jquery','bootstrap','angular','spinner'],function () {
 		content:content
 	});
 	
-	var app = angular.module('myApp', []);
-    app.controller('showController', function ($scope) {
-        $scope.hello  = 'world';
-		$scope.data = [1,2,3,4,5,6,7,8];
-		$scope.name = [1,2,3,4];
-		
-    });
-    angular.bootstrap(document,['myApp']);
+	$('#etalage').etalage({
+		thumb_image_width: 450,
+		thumb_image_height: 300,
+		source_image_width: 900,
+		source_image_height: 1200,
+		show_hint: true,
+		click_callback: function(image_anchor, instance_id){
+			
+		}
+	});
+	
 });
 
 function chooseSize(obj){

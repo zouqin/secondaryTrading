@@ -4,11 +4,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<script src="//cdn.bootcss.com/require.js/2.1.22/require.js" data-main="js/main"></script>
+		
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/bootstrap-spinner.css" />
+		<link rel="stylesheet" href="css/etalage.css" />
 		<link rel="stylesheet/less" type="text/css" href="less/goodsShow.less" />
+		<script src="//cdn.bootcss.com/require.js/2.1.22/require.js" data-main="js/main"></script>
 		<script>
 			require(['../module/city']);
 		</script>
@@ -18,7 +20,7 @@
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="#">Brand</a>
+					<a class="navbar-brand" href="index2.html">Brand</a>
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
@@ -32,25 +34,26 @@
 				</div>
 			</div>
 		</nav>
-
 		<div class="jumbotron">
 			<div class="panel panel-width">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-5">
-							<div class="row">
-								<div class="col-lg-4 big-img">
-									<img src="img/201507171508446984.png" alt="">
-								</div>
-							</div>
-							<div class="row" ng-controller="showController">
-								<div class="col-lg-3" ng-repeat="x in name">
-									<a href="#" class="thumbnail">
-										<img src="img/201507171508446984.png" alt="">
-									</a>
-								</div>
-							</div>
+						<div class="col-lg-5 div-position">
+							<ul id="etalage">
+								<li>
+									<img class="etalage_thumb_image" src="img/201507171508446984.png" />
+									<img class="etalage_source_image" src="img/201507171508446984.png"/>
+								</li>
+								<li>
+									<img class="etalage_thumb_image" src="img/201507171508446984.png" />
+									<img class="etalage_source_image" src="img/201507171508446984.png"/>
+								</li>
+								<li>	
+								</li>
+							</ul>
 						</div>
+						
+						
 						<div class="col-lg-5 col-lg-offset-1 ">
 							<div class="row">
 								<div class="col-lg-12">

@@ -1,4 +1,4 @@
-define(['angular'],function () {
+define(['jquery','bootstrap','angular'],function () {
 	
     var app = angular.module('myApp', []);
 
