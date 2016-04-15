@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="//cdn.bootcss.com/require.js/2.1.22/require.js"  defer async="false" data-main="js/main"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet/less" type="text/css" href="less/public.less" />
+		<link rel="stylesheet/less" type="text/css" href="less/userPlatform.less" />
+	</head>
+	<script>
+		require(['../module/userPlatform']);
+	</script>
+	<body>
+		<div class="container post-body">
+			<div class="row">
+				<div class="col-lg-10">
+					<h1>交易商城</h1>
+				</div>
+				<div class="col-lg-2">
+					<h1>个人中心</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-2 nav">
+					<ul ng-controller="navController">
+						<span>
+							<h5>好叶叶孤城</h5>
+							<img src="img/201507171508446984.png" />
+						</span>
+						<li ng-repeat="x in nav">
+							<h3><a href="{{x.url}}">{{x.title}}</a></h3>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="col-lg-10 info">
+					<div class="row">
+						<div class="title">
+							<h4 class="text-muted">基础信息</h4>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2">
+							<form class="form-horizontal">
+							  <div class="form-group">
+							    <label for="inputEmail3" class="col-sm-2 control-label">标题</label>
+							    <div class="col-sm-8">
+							      <input type="text" class="form-control" id="inputEmail3">
+							    </div>
+							  </div>
+							  <div class="form-group">
+							    <label for="inputPassword3" class="col-sm-2 control-label">价格</label>
+							    <div class="col-sm-8">
+							      <input type="text" class="form-control" id="inputPassword3">
+							    </div>
+							  </div>
+							  <div class="form-group">
+							  	<label class="col-sm-2 control-label">发布类型</label>
+							    <div class=" col-sm-8">
+							      <div class="radio">
+							        <label>
+							          <input type="radio" name="publishType">个人转让
+							        </label>
+							        <label class="col-sm-offset-1">
+							          <input type="radio" name="publishType">个人求购
+							        </label>
+							      </div>
+							    </div>
+							  </div>
+							  <div class="form-group">
+							  	<label for="commodity-desc" class="col-sm-2 control-label">商品描述</label>
+							  	<div class="col-sm-8">
+							  		<textarea class="form-control" id="commodity-desc" rows="6" resize="none"></textarea>
+							  	</div>
+							  </div>
+							  
+							  <div class="form-group">
+							  	<label class="col-sm-2 control-label">上传图片</label>
+							  	<div class="col-sm-8">
+							  		<input type="file" />
+							  	</div>
+							  </div>
+							  
+							  
+							</form>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="title">
+							<h4 class="text-muted">发布人联系方式</h4>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2">
+							<form class="form-horizontal">
+								<!--<div class="form-group">
+									<label class="col-sm-2 control-label">发布类型</label>
+									<div class="col-sm-8">
+										<div class="radio">
+											<label class="col-sm-offset-1">
+									          <input name="address" type="radio" />天心
+									        </label>
+											<label class="col-sm-offset-1">
+									          <input name="address" type="radio" />岳麓
+									        </label>
+									        <label class="col-sm-offset-1">
+									          <input name="address" type="radio" />开福
+									        </label>
+									        <label class="col-sm-offset-1">
+									          <input name="address" type="radio" />长沙
+									        </label>
+									        <label class="col-sm-offset-1">
+									          <input name="address" type="radio" />雨花
+									        </label>
+									        <label class="col-sm-offset-1">
+									          <input name="address" type="radio" />望城
+									        </label>
+									        <label class="col-sm-offset-1">
+									          <input name="address" type="radio" />宁乡
+									        </label>
+										</div>
+									</div>
+								</div>-->
+								
+								<div class="form-group">
+									<label for="contact-address" class="col-sm-2 control-label">联系地址</label>
+									<div class="col-sm-8">
+										<input id="contact-address" type="text"  class="form-control"/>
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<label for="contact-address" class="col-sm-2 control-label">联系电话</label>
+									<div class="col-sm-8">
+										<input id="contact-address" type="text"  class="form-control"/>
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<label for="contact-address" class="col-sm-2 control-label">联系人</label>
+									<div class="col-sm-8">
+										<input id="contact-address" type="text"  class="form-control"/>
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<label for="contact-address" class="col-sm-2 control-label">验证码</label>
+									<div class="col-sm-2">
+										<input id="contact-address" type="text"  class="form-control"/>
+									</div>
+								</div>
+
+								<div class="form-group">
+								    <div class="col-sm-offset-4 col-sm-4">
+								      <button type="submit" class="btn btn-primary btn-block">发布</button>
+								    </div>
+							  	</div>
+							</form>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

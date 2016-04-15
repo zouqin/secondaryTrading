@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="//cdn.bootcss.com/require.js/2.1.22/require.js" defer async="false" data-main="js/main"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet/less" type="text/css" href="less/public.less" />
+		<link rel="stylesheet/less" type="text/css" href="less/userPlatform.less" />
+	</head>
+	<script>
+		require(['../module/userPlatform']);
+	</script>
+	<body>
+		<div class="container info-body">
+			<div class="row">
+				<div class="col-lg-10">
+					<h1>交易商城</h1>
+				</div>
+				<div class="col-lg-2">
+					<h1>个人中心</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-2 nav">
+					<ul ng-controller="navController">
+						<span>
+							<h5>好叶叶孤城</h5>
+							<img src="img/201507171508446984.png" />
+						</span>
+						<li ng-repeat="x in nav">
+							<h3><a href="{{x.url}}">{{x.title}}</a></h3>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="col-lg-10 info">
+					<div class="row">
+						<div class="title">
+							<h4 class="text-muted">基础信息</h4>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 padding-top">
+							<div class="row">
+								<div class="pull-left text-primary padding-left"><h3>好叶叶孤城</h3></div>
+								<div class="col-sm-2 text-success margin-top">余额 ：￥300</div>
+							</div>
+							<div class="row margin-top">
+								<div class="col-sm-2">代付款订单 (0)</div>
+								<div class="col-sm-2">代确认收货 (0)</div>
+								<div class="col-sm-2">代评价交易 (0)</div>
+							</div>
+							
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
