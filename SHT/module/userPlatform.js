@@ -1,4 +1,4 @@
-define(['angular'],function(){
+define(['require','angular'],function(){
 	var app = angular.module('myApp', []);
     app.controller('DemoController', function ($scope) {
         $scope.hello  = 'world';

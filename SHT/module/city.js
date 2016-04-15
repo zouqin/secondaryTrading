@@ -1,4 +1,4 @@
-define(['jquery','bootstrap','angular','spinner','etalage'],function () {
+define(['jquery','bootstrap','angular','spinner','etalage','require'],function () {
 	var content = '<div class="row">'+
 			'<div class="col-lg-4">'+
 				'<a href="#">株洲</a>'+
